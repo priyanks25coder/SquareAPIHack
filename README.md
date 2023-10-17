@@ -1,4 +1,5 @@
-# SquareAPIHack: Streamline your business with SquareScanventory! Capture receipts, instantly sync inventory, and stay organized on the go.
+# SquareScanventory: 
+### Streamline your business with SquareScanventory! Capture receipts, instantly sync inventory, and stay organized on the go.
 
 ## Inspiration:
 Our inspiration for SquareScanventory came from the need to simplify inventory management for merchants using Square. We wanted to create a solution that leverages AI and OCR technology to streamline the process of tracking inventory in a more efficient and user-friendly way.
