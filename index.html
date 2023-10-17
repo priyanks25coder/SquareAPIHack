@@ -7,6 +7,7 @@
   <style>
     body {
       margin: 0;
+      background-color: #f0f0f0;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
         "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
         sans-serif;
@@ -27,6 +28,8 @@
       width: 400px;
     }
     .container{
+      margin-top: 50px;
+      text-align: center;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -43,8 +46,16 @@
   </style>
 </head>
 <body>
+  <nav class="navbar bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        SquareScanventory
+      </a>
+    </div>
+  </nav>
+
   <div class="container">
-    
+    <div class="row" class="col-lg-6 col-md-8 col-sm-12">
     <div class="camera">
         <video id="video">Video stream not available.</video>
         <button class="btn btn-primary" id="capture" style="border-radius: 10px;margin: 10px;">Capture&nbsp;&nbsp;<i class="fa fa-camera fa-2xl"></i></button>
@@ -52,13 +63,25 @@
 
     <canvas id="canvas" style="display: none;">
     </canvas>
+    </div>
+    <div class="row" class="col-lg-6 col-md-8 col-sm-12">
     <div class="output">
         <img id="photo" alt="The screen capture will appear in this box." />
         <button class="btn btn-primary" id="upload" style="border-radius: 10px;margin: 10px;" disabled>Upload&nbsp;&nbsp;<i class="fa fa-camera fa-2xl"></i></button>
         <div id="ocred-text"></div>
     </div>
+    </div>
   </div>
+  <footer class="text-muted">
+    <div class="container">
+      <p class="float-right">
+        <a href="#">Back to top</a>
+      </p>
+      <p>Streamline your business with SquareScanventory! Capture receipts, instantly sync inventory, and stay organized on the go.</p>
+    </div>
+  </footer>
 </body>
+
 <script>
    (() => {
   // The width and height of the captured photo. We will set the
